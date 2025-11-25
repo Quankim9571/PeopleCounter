@@ -67,3 +67,8 @@ class CentroidTracker:
                 self.register(centroid)
 
         return self.objects
+ 
+    # def update_with_centroids(self, centroids):
+    #     # Dùng lại logic cũ nhưng nhận trực tiếp list centroid thay vì boxes
+    #     dummy_boxes = [(cx-1, cy-1, 2, 2) for cx, cy in centroids]  # fake box nhỏ
+    #     return self.update(dummy_boxes)    

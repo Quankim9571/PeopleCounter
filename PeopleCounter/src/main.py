@@ -7,6 +7,7 @@ from src.tracking.centroid_tracker import CentroidTracker
 from src.counting.people_counter import count_people
 from src.utils.drawer import draw_line, draw_box
 from src.utils.config import VIDEO_PATH
+from src.visualization.app_ui import run_ui
 
 # Kích thước cố định video (nếu muốn)
 FRAME_WIDTH = 640
@@ -74,4 +75,6 @@ def main():
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    main()
+    # if len(sys.argv) > 1 and sys.argv[1] == "--ui":
+        run_ui()
+    
